@@ -1,0 +1,73 @@
+:root{
+    --bg:#f8fafc;
+    --ink:#111827;
+    --muted:#6b7280;
+    --accent:#0d6efd;
+    --surface:#ffffff;
+    --border:#e5e7eb;
+  }
+  
+  body{ color:var(--ink); background:var(--bg); line-height:1.6; }
+  
+  /* Task 0 */
+  .display-title{ font-size:1.75rem; font-weight:800; line-height:1.2; }
+  .display-subtitle{ font-size:1.25rem; font-weight:600; line-height:1.3; }
+  .lead{ font-size:1rem; }
+  
+  @media (min-width: 576px){
+    .display-title{ font-size:2rem; }
+    .display-subtitle{ font-size:1.35rem; }
+    .lead{ font-size:1.05rem; }
+  }
+  
+  
+  @media (min-width: 768px){
+    .display-title{ font-size:2.25rem; }
+    .display-subtitle{ font-size:1.5rem; }
+    .lead{ font-size:1.1rem; }
+  }
+  
+  
+  @media (min-width: 992px){
+    .display-title{ font-size:2.5rem; }
+    .display-subtitle{ font-size:1.65rem; }
+    .lead{ font-size:1.125rem; }
+  }
+  
+  /* Task 1 */
+  .mq-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  .mq-box{
+    flex:1 1 100%;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:24px;
+    text-align:center;
+    font-weight:600;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+  }
+  
+  @media (min-width: 768px){
+    .mq-box{ flex-basis: calc(50% - 12px); }
+  }
+  
+  @media (min-width: 992px){
+    .mq-box{ flex-basis: calc(33.333% - 12px); }
+  }
+  
+  /* Portfolio  */
+  .card .card-title{ font-weight:700; }
+  @media (max-width: 575.98px){
+    
+    header .text-muted{ display:none; } 
+    .card .card-text{ font-size:0.95rem; }
+  }
+  @media (min-width: 1200px){
+
+    .card .card-text{ font-size:1.05rem; }
+  }
+  
