@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment #4 – Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#f8fafc; --ink:#111827; --muted:#6b7280; --border:#e5e7eb; }
+    *{ box-sizing:border-box; } body{ margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--ink); background:var(--bg); }
+    .container{ width:min(960px,92vw); margin:48px auto; }
+    h1{ margin:0 0 16px; } p{ color:var(--muted); margin:0 0 24px; }
+    .grid{ display:flex; flex-wrap:wrap; gap:16px; }
+    .card{ flex:1 1 100%; border:1px solid var(--border); border-radius:12px; padding:20px; background:#fff; text-decoration:none; color:inherit; transition:transform .15s, box-shadow .15s, border-color .15s; }
+    .card:hover{ transform:translateY(-2px); border-color:#0d6efd; box-shadow:0 0 0 3px rgba(13,110,253,.15); }
+    @media (min-width:768px){ .card{ flex-basis:calc(50% - 16px); } }
+    @media (min-width:992px){ .card{ flex-basis:calc(33.333% - 16px); } }
+    small{ color:var(--muted); display:block; margin-top:4px; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Assignment #4</h1>
+    <p>Open a task:</p>
+    <div class="grid">
+      <a class="card" href="./part1-media-queries.html">
+        <strong>Task 0–1: Media Queries</strong>
+        <small>Typography + 3-box layout (pure CSS)</small>
+      </a>
+      <a class="card" href="./part2-bootstrap.html">
+        <strong>Task 2–3: Bootstrap Grid & Navbar</strong>
+        <small>12-column grid · collapsible navbar</small>
+      </a>
+      <a class="card" href="./portfolio.html">
+        <strong>Task 4: Responsive Portfolio</strong>
+        <small>Projects + Sidebar + Footer</small>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
